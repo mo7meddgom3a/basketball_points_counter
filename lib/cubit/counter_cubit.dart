@@ -12,9 +12,13 @@ class CounterCubit extends Cubit<CounterState> {
     if (team == "A") {
       teamA += buttonNumber;
       emit(CounterAIncrement());
-    } else {
+    } else if (team == "B"){
       teamB += buttonNumber;
       emit(CounterBIncrement());
+    }else{
+      teamA = 0;
+      teamB = 0;
+      emit(CounterReset());
     }
   }
 }

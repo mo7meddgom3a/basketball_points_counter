@@ -10,3 +10,7 @@ class CounterBIncrement extends CounterState
 {
 
 }
+class CounterReset extends CounterState
+{
+
+}
